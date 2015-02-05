@@ -1,0 +1,54 @@
+/*==============
+    General
+================*/
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+  height: 100%;
+}
+
+.clearfix:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+.clearfix:before {
+    clear:both;
+}
+
+ul, li {
+    list-style-type: none;
+}
+body > ng-include {
+    height: 100%;
+}
+
+.main-logo {
+    display: inline-block;
+    margin: 0;
+}
+.side-menu-opened .tools-menu-holder {
+    background: #4c4c4c;
+    height: 100%;
+}
+.tools-menu-icon {
+    background: url("../images/burger.png") no-repeat right top;
+    height: 45px;
+    width:  55px;
+    float: right;
+}
+.side-menu-opened .tools-menu-icon {
+    background: url("../images/burger.png") no-repeat 20% top;
+}
+header.side-menu-opened {
+    height: 100%;
+}
+.tools-menu {
+    float: right;;
+    background: #4c4c4c;
+    height: 100%;
+    width: 50%;
+    color: #fff;
+}
