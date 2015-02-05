@@ -3,7 +3,6 @@
 ================*/
 html {
     height: 100%;
-    width: 100%;
 }
 body {
   height: 100%;
@@ -24,31 +23,60 @@ ul, li {
 body > ng-include {
     height: 100%;
 }
-
+header {
+    height: 75px;
+}
 .main-logo {
     display: inline-block;
     margin: 0;
+    float: right;
+    padding: 10px;
 }
-.side-menu-opened .tools-menu-holder {
-    background: #4c4c4c;
-    height: 100%;
-}
+
 .tools-menu-icon {
     background: url("../images/burger.png") no-repeat right top;
     height: 45px;
     width:  55px;
-    float: right;
+    position: absolute;
+    z-index: 1;
 }
 .side-menu-opened .tools-menu-icon {
     background: url("../images/burger.png") no-repeat 20% top;
 }
-header.side-menu-opened {
+.tools-menu {
+    background: #4c4c4c;
+    color: #fff;
+
+    -webkit-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    -moz-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    -o-transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+    transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+
+    position: absolute;
+    left: 0;
+    width: 60%;
     height: 100%;
 }
-.tools-menu {
-    float: right;;
-    background: #4c4c4c;
-    height: 100%;
-    width: 50%;
-    color: #fff;
+.tools-menu.ng-hide {
+    left: -100%;
+    display: block !important;
+}
+.tools-menu ul {
+    margin: 80px 0 0;
+    padding: 0;
+}
+.tools-menu li {
+    padding: 15px 55px;
+    border-top: 2px solid #fff;
+    text-align: right;
+    font-size: 20px;
+}
+.logo{
+    background: url("../images/Untitled-1.png") no-repeat center top;
+    height: 75px;
+    width: 100%;
+    position: absolute;
+}
+.tools-menu .logo {
+    background-position: 89% top;
 }

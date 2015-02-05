@@ -4,5 +4,5 @@ angular.module('lbApp')
   .controller('MainCtrl', [
         "$scope",
         function ($scope) {
-            $scope.sideMenuOpened = false;
+            $scope.sideMenuHidden = true;
   }]);

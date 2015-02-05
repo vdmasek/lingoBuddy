@@ -1,27 +1,33 @@
-<header ng-class="{'side-menu-opened': sideMenuOpened}">
+<header ng-class="{'side-menu-opened': !sideMenuHidden}" class="clearfix">
     <h1 class="main-logo">LingoBuddy</h1>
-    <div class="tools-menu-holder">
-        <div class="tools-menu-icon" ng-click="sideMenuOpened = true"></div>
-        <div class="tools-menu">
-            <nav ng-show="sideMenuOpened">
-                <ul>
-                    <li>
-                        account name
-                    </li>
-                    <li>
-                        settings
-                    </li>
-                    <li>
-                        preferences
-                    </li>
-                    <li>
-                        about
-                    </li>
-                    <li>
-                        sign-out
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    <div class="logo"></div>
+    <div class="tools-menu-icon"
+         ng-click="sideMenuHidden = !sideMenuHidden"></div>
+    <div class="tools-menu" ng-hide="sideMenuHidden">
+        <div class="logo"></div>
+        <nav>
+            <ul>
+                <li>
+                    Profile
+                </li>
+                <li>
+                    Settings
+                </li>
+                <li>
+                    Sreferences
+                </li>
+                <li>
+                    About
+                </li>
+                <li>
+                    Sign-out
+                </li>
+            </ul>
+        </nav>
     </div>
 </header>
+<main>
+    <div style="height:150px; line-height:150px; text-align: center">Profile Section</div>
+    <div style="height:150px; line-height:150px; text-align: center">Preferences Section</div>
+    <div style="height:150px; line-height:150px; text-align: center">Call Button</div>
+</main>
